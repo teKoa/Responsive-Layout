@@ -11,27 +11,30 @@
   <body>
 
       <header id="top">
-        <div class="wrapper">
+        <div class="wrapper clearfix">
           <h1 class="name">Jeroen Augustinus</h1>
-          <nav>
+          <nav class="clearfix">
             <ul class="main-nav">
-              <li><a href="">Home</a></li>
-              <li><a href="">Portfolio</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="#top">Home</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
-          <img src="img/responsive-layout-profile.png" />
+          <img src="img/slackprofile.png" alt="Profile Picture" />
           <p>Hi! I'm a front-end developer who loves responsive design and css.
              I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!
           </p>
-        </div>
+        </div><!-- end header wrapper -->
       </header>
 
-      <section>
+
+
+      <section id="portfolio">
         <div class="wrapper">
+
           <h2 class="portfolio">Portfolio</h2>
 
-          <ul id="gallery">
+          <ul id="gallery" class="clearfix">
               <li>
                 <a href="img/portfolio-1.png">
                   <img src="img/portfolio-1.png" alt="Thumbnail of Marketing Page project" />
@@ -75,11 +78,12 @@
                 </a>
               </li>
           </ul>
-        </div>
 
+        </div><!-- end portfolio wrapper -->
       </section>
 
-      <footer>
+
+      <footer id="contact">
         <div class="wrapper">
           <h2>Contact</h2>
           <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
@@ -92,7 +96,12 @@
 
           <h2 class="footer-name">Jeroen Augustinus</h2>
           <a href="#top" class="back-to-top">Back to top</a>
-        </div>
+          <ul class="footer-nav">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- end footer wrapper -->
       </footer>
 
   </body>
